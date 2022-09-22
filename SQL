@@ -1,0 +1,4 @@
+SELECT city_data.city, global_data.year, global_data.avg_temp , city_data.year,city_data.avg_temp
+FROM city_data 
+INNER JOIN global_data ON city_data.year=global_data.year
+WHERE city='Riyadh';
